@@ -4,7 +4,7 @@
 This is an MVP ETL pipeline which extracts a product set from O2, one of our clients, and transforms and stores this data into a clear and understandable format.
 
 # Project Overview
-The task was to create an ETL pipeline to extract handset devices, pay monthly tariffs, and optionally sim-only tariffs from the O2 website. The pipeline was built using Python and Jupyter notebooks.
+The task was to create an ETL pipeline to extract handset devices, pay monthly tariffs, and optionally sim-only tariffs from the O2 website. The pipeline was built using Python and Jupyter notebooks. The following texts are paraphrased from the supplied slide deck. 
 
 ## Approach
 To approach this task, I first went through a purchase journey on the O2 website to get a feel for how the website operates. I then used web scraping techniques to extract the relevant product data from the website. The data was then cleaned and transformed to a clear and understandable format, and stored in a CSV file.
