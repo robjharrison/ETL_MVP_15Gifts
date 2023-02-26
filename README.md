@@ -13,7 +13,7 @@ To approach this task, I first went through a purchase journey on the O2 website
 The product data was sourced from the O2 website, specifically the phones page (https://www.o2.co.uk/shop/phones). The data was extracted using the BeautifulSoup library in Python.
 
 ## MVP Output
-The MVP output produced by the ETL pipeline is a CSV file containing a subset of the products available on the O2 website, including handset devices, pay monthly tariffs, and optionally sim-only tariffs. The output file is included in this GitHub repository.
+The MVP output produced by the ETL pipeline is in several forms. Data is by default exported as a CSV file, as are the potential 'outliers' identified prior to storage. The data is also shown stored in-script to a single-table non-persistant (SQLite in RAM) database instance also containing the scraped subset of products available on the O2 website, including handset devices and pay monthly tariffs (it was optional to attempt extraction of sim-only tariff data). The output file(s) is included in this GitHub repository.
 
 ## Future Improvements
 - Expand the data captured to include additional product attributes such as colour, capacity, availability, and features.
@@ -26,7 +26,7 @@ The MVP output produced by the ETL pipeline is a CSV file containing a subset of
 - Expand the Pipeline reporting by including at least price data in the identify_outliers() function.
 - Ensure that the MVP is indeed what was requested/expected by stakeholders, and not just 'what I think/my interpretation' of the brief.
 - Remove the use of user-defined scrap depth and develop a more dynamic approach to scraping data.
-- Decide whether outliers are to be removed or only identified and flagged with a reason, and update the pipeline accordingly. The presentation can also be accessed at [insert link here].
+- Decide whether outliers are to be removed or only identified and flagged with a reason, and update the pipeline accordingly. The Google Slides presentation link has been forwarded seperately via email. 
 
 # Contact
 For any questions or feedback, please contact robjharrison@gmail.com
